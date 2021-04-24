@@ -1,7 +1,6 @@
 #include<iostream>
 using namespace std;
 void calculate(int,int,int);
-void displaysec(int);
 int main()
 {
 	int h,m,s;
