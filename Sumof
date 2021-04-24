@@ -1,0 +1,37 @@
+#include<iostream>
+using namespace std;
+int prime(int);
+void sum(int);
+int main()
+{
+	int n;
+	cout<<"Enter a positive number"<<endl;
+	cin>>n;
+	sum(n);
+}
+int prime(int x)
+{
+	int i;
+
+			for(i=2;i<=x/i;i++)
+				if(x%i==0)
+				  break;
+			if(i>x/i)
+			  return 1;
+		
+}
+void sum(int a)
+{
+	int i,j;
+	for(i=1;i<=a;i++)
+	{
+		if(prime(i)==1)
+		{
+		  for(j=i;j<=a;j++)
+		 {
+			if(prime(j)==1 && (i+j)==a)
+			cout<<a<<"="<<i<<"+"<<j<<endl;
+		 }
+	  } 
+	}
+}
